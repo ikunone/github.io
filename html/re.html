@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+		<link rel="stylesheet" type="text/css" href="../css/re.css"/>
+		<script src="../js/re.js"></script>
+	</head>
+	<body>
+		<div class="box" id="box">
+			<h2>注册</h2>
+			<!--请求方式设置为get-->
+			<form id="form" action="" method="get">
+				<ul>
+					<li>
+						<label><span>*</span>用户名：</label>
+						<!--设置输入框的提示信息-->
+						<input type="text" name="username" placeholder="只能输入6-20个字母、数字、下划线" id="username" />
+					</li>
+					<li>
+						<label><span>*</span>电子邮箱：</label>
+						<input type="text" name="email" placeholder="输入正确的电子邮箱地址" id="email" />
+					</li>
+					<li>
+						<label><span>*</span>密码：</label>
+						<!--输入类型设置为密码类型-->
+						<input type="password" name="pwd" placeholder="由字母开头，包含字母、数字、下划线，6-16位" id="pwd" />
+					</li>
+					<li>
+						<!--设置行内元素标签-->
+						<label><span>*</span>确认密码：</label>
+						<input type="password" name="pwdOk" placeholder="确认密码必须与密码一致" id="pwdOk" />
+					</li>
+				</ul>
+				<!--绑定表单提交方法-->
+				<button type="button" onclick="formSubmit()">提交</button>
+				<a href="from.html">去登录</a>
+			</form>
+		</div>
+	</body>
+</html>
