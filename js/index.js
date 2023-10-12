@@ -4,4 +4,7 @@ function text01(){
 function text02(){
 	window.opan("html/re.html")
 }
+function text03(){
+	window.open("html/mc.html")
+}
 	
